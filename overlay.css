@@ -1,0 +1,15 @@
+#overlay_blackout {
+	background: #ddd;
+	z-index: 2000;
+	display: none;
+}
+
+.overlay {
+	display: none;
+	position: absolute;
+	border: 1px solid #000;
+	z-index: 2100;
+	background: #fff;
+	padding: 8px;
+	width: 200px;
+}

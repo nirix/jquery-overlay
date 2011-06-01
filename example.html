@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Overlay Example</title>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js" type="text/javascript"></script>
+		<script src="jquery.overlay.js" type="text/javascript"></script>
+		<link href="overlay.css" media="screen" rel="stylesheet" type="text/css" />
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('#overlay_one_btn').bind('click', function() {
+					$('#overlay_one').overlay();
+					return false;
+				});
+				
+				$('#overlay_two_btn').bind('click', function() {
+					$('#overlay_two').overlay();
+					return false;
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<div id="overlay_blackout"></div>
+		<div id="overlay_one" class="overlay">This is the first overlay</div>
+		<div id="overlay_two" class="overlay">This is the second overlay</div>
+		
+		<div align="center">
+			<a href="#" id="overlay_one_btn">Overlay #1</a>
+			<a href="#" id="overlay_two_btn">Overlay #2</a>
+		</div>
+	</body>
+</head>
